@@ -148,7 +148,7 @@ class VC:
         sid,
         input_audio_path,
         f0_up_key,
-        f0_file,
+        # f0_file,
         f0_method,
         file_index,
         file_index2,
@@ -158,6 +158,7 @@ class VC:
         rms_mix_rate,
         protect,
     ):
+        f0_file = None
         if input_audio_path is None:
             return "You need to upload an audio", None
         f0_up_key = int(f0_up_key)
